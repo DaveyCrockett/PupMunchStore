@@ -1,0 +1,15 @@
+.productQuantity {
+    color: crimson;
+    display: block;
+}
+
+.productQuantity button{
+    display: inline-block;
+    margin: 5px;
+}
+
+.productQuantity label {
+    display: inline-block;
+    padding: 3px 5px;
+    width: 25px;
+}

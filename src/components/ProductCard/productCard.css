@@ -1,0 +1,28 @@
+.productCard {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 2px black;
+    margin: 10px;
+}
+
+.productCard label {
+    display: block;
+}
+
+.productCard .price {
+    color: gray;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.productCard .total {
+    color: rgb(33, 33, 197);
+    display: inline-block;
+}
+
+.productCard .addProduct {
+    /* display add button to the bottom right of card */
+}
