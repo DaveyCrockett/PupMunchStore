@@ -23,6 +23,17 @@
     display: inline-block;
 }
 
-.productCard .addProduct {
-    /* display add button to the bottom right of card */
+/* .productCard .addProduct {
+    display add button to the top left of card
+} */
+
+.productCard .prod-category {
+    display: block;
+    text-align: right;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.productCard img {
+    width: 300px;
 }

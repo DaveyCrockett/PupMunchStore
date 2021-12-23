@@ -1,16 +1,20 @@
 import "./productQuantity.css";
 import React, { useState } from "react";
 
-const ProductQuantity = () => {
+const ProductQuantity = (props) => {
   const [quantity, setQuantity] = useState(1);
 
   const increment = () => {
-    setQuantity(quantity + 1);
+    let val = quantity + 1
+    setQuantity(val);
+    props.handleQuantityChange(val);
   };
 
   const decrement = () => {
     if (quantity > 1) {
-      setQuantity(quantity - 1);
+      let val = quantity - 1
+      setQuantity(val);
+      props.handleQuantityChange(val);
     }
   };
 
