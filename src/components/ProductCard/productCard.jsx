@@ -1,13 +1,25 @@
+import { useState } from "react";
 import "./productCard.css";
 import ProductQuantity from "./ProductQuantity/productQuantity";
 
 const ProductCard = (props) => {
   // var total = 0;
+  const [quantity, setQuantity] = useState(1);
+
   const handleQuantityChange = (val) => {
     // let price = val * props.product.price;
     // total = price.toFixed(2);
     // console.log(total);
+    setQuantity(val);
   };
+
+  const getTotal = () => {
+    let total = quantity * props.info.price;
+
+    return total.toFixed(2);
+  }
+
+  
 
   return (
     <div className="productCard">
