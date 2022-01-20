@@ -1,0 +1,23 @@
+.cart-page {
+    min-height: 600px;
+    background-color: #b3e9ff;
+    padding-top: 120px;
+}
+
+.cart-page h1 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.cart-container {
+    display: flex;
+}
+
+.cart-container .items {
+    flex: 4;
+}
+
+.cart-container .side-menu {
+    flex: 1;
+    background-color: aquamarine;
+}
