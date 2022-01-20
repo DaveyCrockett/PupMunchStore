@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react"
 import storeContext from "./storeContext";
 
@@ -31,4 +32,32 @@ const GlobalContext = (props) => {
     )
 };
 
+=======
+import React, { useState } from "react"
+import storeContext from "./storeContext";
+
+const GlobalContext = (props) => {
+    const [cart, setCart] = useState([]);
+    const [user, setUser] = useState({});
+    const myAddProductToCart = () => {
+        console.log("adding to cart")
+    };
+
+    const myRemoveProductFromCart = () => {
+        console.log("removing from cart")
+    };
+    return (
+        <storeContext.Provider value={{
+            cart: cart,
+            user: user,
+
+            addProductToCart: myAddProductToCart,
+            removeProductFromCart: myRemoveProductFromCart
+        }}>
+            {props.children}
+        </storeContext.Provider>
+    )
+};
+
+>>>>>>> 432fa2d14a226d65e57262af4e4d497d02ba0488
 export default GlobalContext;
