@@ -11,7 +11,7 @@ const Cart = () => {
         for(let i=0;i<cart.length;i++){
             total += cart[i].quantity * cart[i].price 
         }
-        return total;
+        return total.toFixed(2);
     };
     return (
         <div className="cart-page">

@@ -8,10 +8,10 @@ const Catalog = () => {
     // state vars are INMUTABLES (can not change)
     let [products, setProducts] = useState([]);
 
-    const loadCatalog = () => {
+    const loadCatalog = async () => {
         console.log("Catalog component loaded");
         let service = new DataService();
-        let data = service.getCatalog();
+        let data = await service.getCatalog();
         setProducts(data);
         console.log("Retrieved", data);
     };

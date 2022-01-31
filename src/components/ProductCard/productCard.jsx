@@ -40,7 +40,7 @@ const ProductCard = (props) => {
         <label className="price">
           Price: ${props.product.price.toFixed(2)}
         </label>
-        <label className="total">Total: ${getTotal}</label>
+        <label className="total">Total: ${getTotal()}</label>
       </div>
       <ProductQuantity handleQuantityChange={handleQuantityChange} />
       <button onClick={handleAdd} className="addProduct btn btn-primary btn-sm">

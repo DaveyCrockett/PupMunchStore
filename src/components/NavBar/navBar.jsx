@@ -27,17 +27,10 @@ const NavBar = () => {
             </li>
           </ul>
           <form className="d-flex">
-<<<<<<< HEAD
             <Link className="btn btn-outline btn-outline-light" to="/cart">
               <span className="badge bg-primary">{cart.length}</span>
               View Cart
             </Link>
-=======
-            {/* <Link className="btn btn-outline btn-outline-light" to="/cart">
-            <span className="badge bg-primary">0</span>
-            View Cart
-        </Link> */}
->>>>>>> 432fa2d14a226d65e57262af4e4d497d02ba0488
           </form>
         </div>
       </div>
